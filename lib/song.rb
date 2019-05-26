@@ -31,7 +31,7 @@ class Song
 
   def genre_count
     genre_counts = {}
-    @genres.each do |genre|
+    @@genres.each do |genre|
       if not genre_counts.key?(genre)
         genre_counts[genre]= 0
       end
