@@ -20,4 +20,8 @@ class Song
     @@count
   end
 
+  def self.artists
+    @@artists.uniq{|x| x.user_id}
+  end
+
 end
