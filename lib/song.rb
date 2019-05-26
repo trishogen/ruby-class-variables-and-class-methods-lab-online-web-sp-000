@@ -12,14 +12,9 @@ class Song
     @genre = genre
 
     @@count +=1
-
-    if not @@artists.include?(artist)
-      @@artists << artist
-    end
-
-    if not @@genres.include?(genre)
-      @@genres << genre
-    end
+    @@artists << artist
+    @@genres << genre
+    
   end
 
   def self.count
