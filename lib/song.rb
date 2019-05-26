@@ -17,7 +17,7 @@ class Song
   end
 
   def self.count
-    @@count.size
+    @@count
   end
 
 end
