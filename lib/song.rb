@@ -29,7 +29,7 @@ class Song
     @@genres.uniq
   end
 
-  def genre_count
+  def sefl.genre_count
     genre_counts = {}
     @@genres.each do |genre|
       if not genre_counts.key?(genre)
@@ -39,5 +39,5 @@ class Song
     end
     genre_counts
   end
-  
+
 end
